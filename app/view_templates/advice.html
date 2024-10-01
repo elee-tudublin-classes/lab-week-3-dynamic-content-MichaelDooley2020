@@ -1,0 +1,17 @@
+{% include "./partials/head" ignore missing with context %}
+
+
+<body>
+    <!-- include navbar from partials -->
+    {% include "./partials/nav.html" ignore missing with context %}
+    <h3>Advice</h3>
+
+    <h1>Advice</h1>
+    <div class="alert alert-info" role="alert">
+        <p>{{ data.slip.advice }}</p>
+    </div>
+    
+
+    <!-- Load common CSS and JS -->
+    {% include "./partials/dependencies.html" ignore missing with context %}
+</body>
