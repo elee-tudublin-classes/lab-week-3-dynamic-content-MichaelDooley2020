@@ -1,0 +1,15 @@
+{% include "./partials/head" ignore missing with context %}
+
+<body>
+    <!-- include navbar from partials -->
+    {% include "./partials/nav.html" ignore missing with context %}
+    
+    <h1>Welcome {{name}}</h1>
+
+    {% if name == "" %}
+        <h4>Try changing the URL to /params?name=your name</h4>
+    {% endif %}
+    
+    <!-- Load common CSS and JS -->
+    {% include "./partials/dependencies.html" ignore missing with context %}
+</body>
